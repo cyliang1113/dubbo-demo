@@ -15,11 +15,12 @@
 	http://code.alibabatech.com/schema/dubbo
 	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-	<dubbo:application name="dubbo-demo-consumer" />
+	<dubbo:application name="dubbo-demo-consumer"/>
 
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
-	
-	<dubbo:consumer check="false" />
 
-	<dubbo:reference id="helloService" interface="com.leo.demo.dubbo.service.HelloService" />
+	<dubbo:consumer check="false"  filter="InvokeLogFilter"  />
+
+	<dubbo:reference id="helloService" interface="com.leo.demo.dubbo.service.HelloService"/>
+	<dubbo:reference id="userService" interface="com.leo.demo.dubbo.service.UserService"/>
 </beans>
