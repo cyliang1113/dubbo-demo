@@ -24,8 +24,7 @@
 		</property>
 	</bean> 
 	-->
-	
-	<context:component-scan base-package="cn.leo.xback.service" />
+
 
 	<import resource="applicationContext-dubbo.xml" />
 </beans>
