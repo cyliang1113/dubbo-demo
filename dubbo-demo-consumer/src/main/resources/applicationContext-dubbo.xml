@@ -19,7 +19,7 @@
 
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 
-	<dubbo:consumer check="false"  filter="InvokeLogFilter"  />
+	<dubbo:consumer check="false"  filter="TrackFilter"  />
 
 	<dubbo:reference id="helloService" interface="com.leo.demo.dubbo.service.HelloService"/>
 	<dubbo:reference id="userService" interface="com.leo.demo.dubbo.service.UserService"/>
