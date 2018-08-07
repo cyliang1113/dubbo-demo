@@ -9,6 +9,7 @@ public class HelloServiceImpl implements HelloService {
 
 	@Override
 	public String hello(String msg) {
+		int i = 1/0;
 		return "hello, " + msg;
 	}
 
