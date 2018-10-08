@@ -1,2 +1,0 @@
-InvokeLogFilter=com.leo.demo.dubbo.filter.InvokeLogFilter
-TrackFilter=com.leo.demo.dubbo.filter.TrackFilter

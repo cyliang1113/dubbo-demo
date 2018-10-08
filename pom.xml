@@ -4,6 +4,7 @@
 	<groupId>cn.leo.demo</groupId>
 	<artifactId>dubbo-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 
 	<modules>
 		<module>dubbo-demo-comm</module>
